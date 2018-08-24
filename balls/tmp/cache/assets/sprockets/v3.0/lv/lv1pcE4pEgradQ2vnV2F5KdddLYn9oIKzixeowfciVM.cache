@@ -1,0 +1,11 @@
+I"(function() {
+  (function() {
+    var balls_list;
+    balls_list = document.getElementById('ballsList');
+    if (balls_list.getElementsByTagName("li").length === 0) {
+      return balls_list.innerHtml = '<li class="circle"></li>';
+    }
+  })();
+
+}).call(this);
+:ET

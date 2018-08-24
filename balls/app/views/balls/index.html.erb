@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Balls</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="ball-container">
+          <div class="ball-header">
+            <div class="ball-form">
+              <form class="" action="/balls/create" method="post" data-remote="true">
+                <button class="btn" type="submit">Drop</button>
+                <input id="ballsCount" type="hidden" value="1" name="balls_count" />
+                <input type="hidden" value=<%= form_authenticity_token %> name="authenticity_token" />
+              </form>
+            </div>
+            <div class="balls-stats">
+              <span class="left-span">
+                <b><p>Sum</p></b>
+                <p id="sumValue">1</p>
+              </span>
+              <span class="right-span">
+                <b><p>Score</p></b>
+                <p id="scoreValue">1</p>
+              </span>
+            </div>
+          </div>
+          <div class="balls-list">
+            <ul id="ballsList"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

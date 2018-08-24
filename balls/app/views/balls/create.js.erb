@@ -1,0 +1,18 @@
+var scores = { 'pink': 1, 'green': 3, 'blue': 5, 'purple': 15 }
+function element(id) {
+  return document.getElementById(id);
+}
+
+
+// insert another ball with the returned color.
+var eleHTML = element('ballsList').innerHTML;
+element('ballsCount').value = parseInt(element('ballsCount').value) + 1
+element("ballsList").innerHTML =  eleHTML +
+                                  '<li class="circle <%= @color %>"></li>';
+
+// update sum
+element('sumValue').innerHTML = parseInt(element('sumValue').innerHTML) + 1
+
+// update
+element('scoreValue').innerHTML = parseInt(element('scoreValue').innerHTML) +
+                                  scores["<%= @color %>"]

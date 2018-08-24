@@ -1,0 +1,7 @@
+I"t(function() {
+  document.onload = function() {
+    return alert('ay 7aga ya 3m al 7ag.');
+  };
+
+}).call(this);
+:ET

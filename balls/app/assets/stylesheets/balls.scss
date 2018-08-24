@@ -1,0 +1,114 @@
+// Place all the styles related to the Balls controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: table;
+  left: 42%;
+  right: 42%;
+  position: absolute;
+}
+
+.content {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.ball-container {
+  width: 16%;
+  height: 500px;
+  background: red;
+  border: 2px solid black;
+}
+
+.ball-header {
+  background: gray;
+  height: 25%;
+}
+
+.ball-form {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.balls-stats {
+  height: 50%;
+  width: 100%;
+}
+
+.balls-list {
+  background: white;
+  height: 75%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.balls-list ul {
+  margin: 0;
+  overflow: auto;
+}
+
+.btn {
+  width: 70px !important;
+  height: 30px !important;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.left-span {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  float: left;
+}
+
+.right-span {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  float: left;
+}
+
+p {
+  margin-top: 0;
+}
+
+.circle {
+  border-radius: 50%;
+  behavior: url(PIE.htc);
+  background: pink;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+.purple {
+  background: purple;
+}
+
+ul {
+  width: 60%;
+  list-style-type: none;
+  padding-left: 0;
+  left: 20%;
+  position: relative;
+}

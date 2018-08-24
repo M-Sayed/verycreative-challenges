@@ -1,0 +1,24 @@
+I"Ä(function() {
+  var element, scores;
+
+  scores = {
+    'pink': 1,
+    'green': 3,
+    'blue': 5,
+    'purple': 15
+  };
+
+  element = function(id) {
+    return document.getElementById(id);
+  };
+
+  window.onload = function() {
+    var balls_list;
+    balls_list = document.getElementById('ballsList');
+    if (balls_list.getElementsByTagName("li").length === 0) {
+      return balls_list.innerHTML = '<li class="circle"></li>';
+    }
+  };
+
+}).call(this);
+:ET
